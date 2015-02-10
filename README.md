@@ -1,2 +1,2 @@
 # space-mmo
-Space mmo project
+First attempt at a small group multiplayer-focused game, set in a galaxy environment.
