@@ -167,22 +167,22 @@ public class FlightStyles extends SimpleApplication {
         inputManager.addMapping("Y+", new MouseAxisTrigger(MouseInput.AXIS_Y, false));
         inputManager.addMapping("X-", new MouseAxisTrigger(MouseInput.AXIS_X, true));
         inputManager.addMapping("Y-", new MouseAxisTrigger(MouseInput.AXIS_Y, true));
-        final float sensitivity = 300.0F;
+        final float sensitivity = 1.0F;
         inputManager.addListener(new AnalogListener() {
             @Override
             public void onAnalog(String name, float value, float tpf) {
                 switch (name) {
                     case "X+":
-                        fighter.rotate(0.0F, -tpf * value * sensitivity, 0.0F);
+                        fighter.rotate(0.0F, -value * sensitivity, 0.0F);
                         break;
                     case "X-":
-                        fighter.rotate(0.0F, tpf * value * sensitivity, 0.0F);
+                        fighter.rotate(0.0F, value * sensitivity, 0.0F);
                         break;
                     case "Y+":
-                        fighter.rotate(0.0F, 0.0F, -tpf * value * sensitivity);
+                        fighter.rotate(0.0F, 0.0F, -value * sensitivity);
                         break;
                     case "Y-":
-                        fighter.rotate(0.0F, 0.0F, tpf * value * sensitivity);
+                        fighter.rotate(0.0F, 0.0F, value * sensitivity);
                         break;
                 }
             }
@@ -318,8 +318,6 @@ class ReticleControl extends AbstractControl {
         } else {
             reticle.removeFromParent();
         }
-
-        System.out.println(screenPos);
     }
 
     @Override
