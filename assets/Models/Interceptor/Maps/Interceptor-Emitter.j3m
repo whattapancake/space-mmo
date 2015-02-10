@@ -1,0 +1,17 @@
+Material MyMaterial : Common/MatDefs/Misc/Particle.j3md {
+    MaterialParameters {
+        PointSprite : false
+        Softness : 1.0
+        Quadratic : 0.0
+        Texture : Repeat Effects/Explosion/smoketrail.png
+        NumSamplesDepth : 3
+    }
+    AdditionalRenderState {
+      FaceCull Back
+      Wireframe Off
+      DepthWrite On
+      ColorWrite On
+      DepthTest On
+      Blend Alpha
+    }
+}

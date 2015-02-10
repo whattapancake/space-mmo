@@ -1,0 +1,431 @@
+newmtl material_1
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/cs1.jpg
+
+newmtl material_1_displays
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d1.jpg
+
+newmtl material_2
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d12.jpg
+
+newmtl material_3
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d13.jpg
+
+newmtl material_4
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d14.jpg
+
+newmtl material_5
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d15.jpg
+
+newmtl material_6
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d16.jpg
+
+newmtl material_7
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d17.jpg
+
+newmtl material_8
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d8.jpg
+
+newmtl material_9
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d9.jpg
+
+newmtl material_10
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d10.jpg
+
+newmtl material_11
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d11.jpg
+
+newmtl material_12
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d22.jpg
+
+newmtl material_13
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d17.jpg
+
+newmtl material_14
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d14a.jpg
+
+newmtl material_15
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d15b.jpg
+
+newmtl material_16
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d17.jpg
+
+newmtl material_17
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d17b.jpg
+
+newmtl material_18
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d10.jpg
+
+newmtl material_19
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d19.jpg
+
+newmtl material_20
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d20.jpg
+
+newmtl material_21
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d21.jpg
+
+newmtl material_22
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d22.jpg
+
+newmtl material_23
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d23.jpg
+
+newmtl material_24
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d8.jpg
+
+newmtl material_25
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/d19.jpg
+
+newmtl material_1_doors
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/doors_mtl1_diffcol.jpg
+
+newmtl material_1_gate_front
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/sk1.jpg
+
+newmtl material_1_Gate_rear
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/sk1.jpg
+
+newmtl material_1_glass
+d 0.8
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 0 0 0
+Ks 1 1 1
+Km 0
+
+newmtl material_1_hull
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/hl1.jpg
+
+newmtl material_1_interiors
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/int1.jpg
+
+newmtl material_1_landing_gear
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/lg1.jpg
+
+newmtl material_1_lights
+d 1
+Ns 1
+Ni 0
+Ka 0.207843 0.698039 1
+Kd 0.501961 1 1
+Ks 1 1 1
+Km 0
+
+newmtl material_1_sick_bay_bed_cushion
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 0.141176 0.313726 0.27451
+Ks 1 1 1
+Km 0
+
+newmtl material_1_stove
+d 0.8
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 0 0 0
+Ks 1 1 1
+Km 0
+
+newmtl material_2_stove
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 0 0
+Ks 1 1 1
+Km 0
+
+newmtl material_3_stove
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+
+newmtl material_4_stove
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 0.27451 0.27451 0.27451
+Ks 1 1 1
+Km 0
+
+newmtl material_1_stove_knobbs
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 0.0862745 0.0862745 0.0862745
+Ks 1 1 1
+Km 0
+
+newmtl material_1_vent
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/hd2.jpg
+
+newmtl default
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+
+newmtl default_lower_hull
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/sk1.jpg
+
+newmtl default_ramps
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/rmp1.jpg
+
