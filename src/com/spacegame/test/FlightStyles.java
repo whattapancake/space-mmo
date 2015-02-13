@@ -32,7 +32,7 @@ public class FlightStyles extends SimpleApplication {
     boolean forward = false, backward = false, left = false, right = false, up = false, down = false, rLeft = false, rRight = false, speedUp = false;
     Vector3f moveDir;
     Spatial fighter;
-    float aspect, curFOV = 60.0F;
+    float aspect, curFOV = 60.0F, spinInertia = 0.0F;
     RadialBlurFilter rbf;
 
     public static void main(String... args) {
@@ -225,12 +225,17 @@ public class FlightStyles extends SimpleApplication {
             impulse.addLocal(upVec.negate());
         }
         impulse.normalizeLocal().multLocal(20.0F * (speedUp ? 2.0F : 1.0F)); //20 = ship speed
+
+        //Now calculate an inertia-correct spin speed
+        float rotSpeed = 4.0F;
         if (rLeft) {
-            fighter.rotate(tpf * 1.25F, 0.0F, 0.0F);
+            spinInertia = FastMath.interpolateLinear(rotSpeed * tpf, spinInertia, 0.05F);
+        } else if (rRight) {
+            spinInertia = FastMath.interpolateLinear(rotSpeed * tpf, spinInertia, -0.05F);
+        } else {
+            spinInertia = FastMath.interpolateLinear(rotSpeed * tpf * 1.25F, spinInertia, 0.0F);
         }
-        if (rRight) {
-            fighter.rotate(-tpf * 1.25F, 0.0F, 0.0F);
-        }
+        fighter.rotate(spinInertia, 0.0F, 0.0F);
 
         moveDir.interpolateLocal(impulse, tpf * 1.5F); //eventually tpf * acceleration value
 
