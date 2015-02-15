@@ -22,6 +22,8 @@ import com.jme3.scene.Spatial;
 import com.jme3.scene.control.AbstractControl;
 import com.jme3.ui.Picture;
 import com.jme3.util.SkyFactory;
+import com.spacegame.eventbus.EventBus;
+import com.spacegame.eventbus.Observer;
 
 /**
  *
@@ -157,7 +159,7 @@ public class FlightStyles extends SimpleApplication {
                         break;
                     case "CameraSwap":
                         if (!isPressed) {
-                            fighter.getControl(CustomChaseCamera.class).swapCam();
+                            EventBus.notify(null, EventBus.Event.EVENT_CAM_SWITCH);
                         }
                         break;
                 }
@@ -167,6 +169,7 @@ public class FlightStyles extends SimpleApplication {
         inputManager.addMapping("Y+", new MouseAxisTrigger(MouseInput.AXIS_Y, false));
         inputManager.addMapping("X-", new MouseAxisTrigger(MouseInput.AXIS_X, true));
         inputManager.addMapping("Y-", new MouseAxisTrigger(MouseInput.AXIS_Y, true));
+
         final float sensitivity = 1.0F;
         inputManager.addListener(new AnalogListener() {
             @Override
@@ -243,7 +246,7 @@ public class FlightStyles extends SimpleApplication {
     }
 }
 
-class CustomChaseCamera extends AbstractControl {
+class CustomChaseCamera extends AbstractControl implements Observer {
 
     protected Camera cam;
     protected Vector3f camOffset1, centerOffset1, camOffset2, centerOffset2;
@@ -259,6 +262,8 @@ class CustomChaseCamera extends AbstractControl {
         this.centerOffset2 = centerOff2;
         this.interp2 = interp2;
         this.cam = cam;
+        
+        EventBus.registerObserver(this);
     }
 
     @Override
@@ -292,6 +297,15 @@ class CustomChaseCamera extends AbstractControl {
 
     @Override
     protected void controlRender(RenderManager rm, ViewPort vp) {
+    }
+
+    @Override
+    public void onNotify(Object entity, EventBus.Event event) {
+        switch (event) {
+            case EVENT_CAM_SWITCH:
+                swapCam();
+                break;
+        }
     }
 }
 
